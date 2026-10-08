@@ -9,10 +9,14 @@ export function AuthProvider({ children }) {
         setIsAuth(true);
     }
 
+    function logout() {
+        setIsAuth(false);
+    }
+
 
     return (
         <AuthContext.Provider
-            value={{isAuth, login}} >
+            value={{isAuth, login, logout}} >
             {children}
         </AuthContext.Provider>
 

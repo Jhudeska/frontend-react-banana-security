@@ -13,7 +13,7 @@ function SignIn() {
 
       <form>
         <p>*invoervelden*</p>
-        <button type="submit" onClick={login}>Inloggen</button>
+        <button type="button" onClick={login}>Inloggen</button>
       </form>
 
       <p>Heb je nog geen account? <Link to="/signup">Registreer</Link> je dan eerst.</p>
