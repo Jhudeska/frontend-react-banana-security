@@ -2,7 +2,7 @@ import React, {createContext, useContext, useState} from 'react';
 
 export const AuthContext = createContext();
 
-export function AuthProvider({ children }) {
+function AuthProvider({ children }) {
     const [isAuth, setIsAuth] = useState(false);
 
     function login() {
@@ -23,3 +23,5 @@ export function AuthProvider({ children }) {
 
     );
 }
+
+export default AuthProvider;
